@@ -14,7 +14,7 @@ local Ui
 local BgFrame
 local frame = {
   Size = {0, 0},
-  Pos = {0.25, 0.25},
+  Pos = {0.5, 0.5},
   Col = {90, 90, 90},
   Trans = 0.15
 }
@@ -26,7 +26,7 @@ function SetupUi()
   BgFrame = Instance.new("Frame", Ui)
   BgFrame.Name = "BgFrame"
   BgFrame.Size = UDim2.fromScale(0, 0)
-  BgFrame.Position = UDim2.fromScale(0.25, 0.25)
+  BgFrame.Position = UDim2.fromScale(0.5, 0.5)
   BgFrame.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
   BgFrame.BackgroundTransparency = 0.15
   local Uic = Instance.new("UICorner", BgFrame)
@@ -34,6 +34,9 @@ function SetupUi()
   local Uis = Instance.new("UIStroke", BgFrame)
   Uis.Color = Color3.fromRGB(65, 65, 65)
   Uis.Thickness = 4
+
+  Ui.Enabled = true
+  BgFrame:TweenSizeAndPosition(UDim2.fromScale(0.5, 0.5), UDim2,fromScale(0.25, 0.25), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5)
 end
 
 SetupUi()
