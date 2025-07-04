@@ -36,7 +36,7 @@ function SetupUi()
   Uis.Thickness = 4
 
   Ui.Enabled = true
-  BgFrame:TweenSizeAndPosition(UDim2.fromScale(0.5, 0.5), UDim2,fromScale(0.25, 0.25), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5)
+  BgFrame:TweenSizeAndPosition(UDim2.fromScale(0.5, 0.5), UDim2.fromScale(0.25, 0.25), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5)
 end
 
 SetupUi()
