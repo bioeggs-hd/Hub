@@ -37,5 +37,6 @@ function SetupUi()
 
   Ui.Enabled = true
   Ts:Create(BgFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, {Size = UDim2.fromScale(frame.Size[1], frame.Size[2]), Position = UDim2.fromScale(frame.Pos[1], frame.Pos[2])}):Play()
-
+end
+  
 SetupUi()
